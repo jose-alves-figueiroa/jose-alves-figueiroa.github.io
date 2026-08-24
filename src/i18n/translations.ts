@@ -1,6 +1,6 @@
 export const translations = {
   en: {
-    title: "Senior Software Engineer",
+    title: "Tech Lead",
     about: "Senior software engineer with solid experience in backend development and strong fullstack capability — including cloud infrastructure and frontend interfaces. Fast learner with excellent technical skills.",
     sections: {
       experience: "Experience",
@@ -36,10 +36,23 @@ export const translations = {
     present: "Present",
     experience: {
       jusfy: {
-        role: "Senior Software Engineer",
-        highlights: [
-          "Platform squad handling thousands of MAU and DAUs",
-          "Building and scaling lawtech solutions for legal automation",
+        positions: [
+          {
+            role: "Tech Lead, Platform Squad",
+            highlights: [
+              "Leading a 3-4 engineer platform squad building backend and frontend systems for a lawtech product with ~15k MAU",
+              "Driving a unified SSO login and renewing the authentication architecture on OAuth2/OIDC",
+              "Leading squad planning, code reviews, and technical interviews",
+            ],
+          },
+          {
+            role: "Senior Software Engineer",
+            highlights: [
+              "Built a churn recovery campaign system with dynamic offers, reactivating thousands of paying users",
+              "Led migration of the invoicing provider to a queue-driven architecture, scaling to thousands of invoices per day",
+              "Contributed to system design discussions focused on reliability and scalability of event-driven workflows",
+            ],
+          },
         ],
       },
       beyond: {
@@ -122,7 +135,7 @@ export const translations = {
     },
   },
   pt: {
-    title: "Engenheiro de Software Sênior",
+    title: "Tech Lead",
     about: "Engenheiro de software sênior com forte experiência em backend e atuação fullstack — incluindo infraestrutura em nuvem e desenvolvimento frontend. Aprendiz rápido, com capacidade técnica sólida e foco em resolver problemas reais.",
     sections: {
       experience: "Experiência",
@@ -158,10 +171,23 @@ export const translations = {
     present: "Atual",
     experience: {
       jusfy: {
-        role: "Engenheiro de Software Sênior",
-        highlights: [
-          "Atuação na squad de plataforma com milhares de MAUs e DAUs",
-          "Construção e evolução de soluções lawtech voltadas para automação jurídica em escala",
+        positions: [
+          {
+            role: "Tech Lead, Squad de Plataforma",
+            highlights: [
+              "Lidero uma squad de plataforma com 3-4 engenheiros, construindo sistemas de backend e frontend para um produto lawtech com ~15 mil MAU",
+              "Conduzindo a construção de um login unificado (SSO) e renovando a arquitetura de autenticação em OAuth2/OIDC",
+              "Lidero o planejamento da squad, code reviews e entrevistas técnicas",
+            ],
+          },
+          {
+            role: "Engenheiro de Software Sênior",
+            highlights: [
+              "Construí um sistema de campanhas de recuperação de churn com ofertas dinâmicas, reativando milhares de usuários pagantes",
+              "Liderei a migração do provedor de notas fiscais para uma arquitetura orientada a filas, escalando para milhares de notas por dia",
+              "Contribuí em discussões de arquitetura focadas em confiabilidade e escalabilidade de fluxos orientados a eventos",
+            ],
+          },
         ],
       },
       beyond: {
@@ -244,7 +270,7 @@ export const translations = {
     },
   },
   fr: {
-    title: "Ingénieur Logiciel Senior",
+    title: "Tech Lead",
     about: "Ingénieur logiciel senior avec une solide expérience en développement backend et une forte capacité fullstack — incluant l'infrastructure cloud et le développement frontend. Apprentissage rapide, grande maîtrise technique et forte orientation vers la résolution de problèmes concrets.",
     sections: {
       experience: "Expérience",
@@ -280,10 +306,23 @@ export const translations = {
     present: "Présent",
     experience: {
       jusfy: {
-        role: "Ingénieur Logiciel Senior",
-        highlights: [
-          "Membre de l'équipe plateforme, gérant des milliers d'utilisateurs actifs mensuels et quotidiens",
-          "Développement et montée en charge de solutions lawtech orientées vers l'automatisation juridique",
+        positions: [
+          {
+            role: "Tech Lead, Équipe Plateforme",
+            highlights: [
+              "Dirige une équipe plateforme de 3 à 4 ingénieurs, développant des systèmes backend et frontend pour un produit lawtech comptant environ 15 000 utilisateurs actifs mensuels",
+              "Pilote la mise en place d'une connexion unique (SSO) et la refonte de l'architecture d'authentification sur OAuth2/OIDC",
+              "Anime la planification de l'équipe, les revues de code et les entretiens techniques",
+            ],
+          },
+          {
+            role: "Ingénieur Logiciel Senior",
+            highlights: [
+              "Conception d'un système de campagnes de réactivation avec offres dynamiques, réactivant des milliers d'utilisateurs payants",
+              "Pilotage de la migration du fournisseur de facturation vers une architecture pilotée par files d'attente, permettant de traiter des milliers de factures par jour",
+              "Contribution aux discussions d'architecture axées sur la fiabilité et la scalabilité des flux événementiels",
+            ],
+          },
         ],
       },
       beyond: {

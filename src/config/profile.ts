@@ -76,6 +76,12 @@ type ExperienceEntry = {
   technologies: readonly string[];
 };
 
+export type Position = {
+  role: string;
+  period: string;
+  highlights: readonly string[];
+};
+
 type ProjectEntry = {
   technologies: readonly string[];
 };
@@ -262,7 +268,7 @@ function calculateSkillYears(
 
 export const profile = {
   name: "José Ricardo Alves Figueirôa",
-  title: "Senior Software Engineer",
+  title: "Tech Lead",
   
   contact: {
     email: "josericardoaf@gmail.com",
@@ -280,16 +286,33 @@ export const profile = {
   
   experience: [
     {
-      role: "Senior Software Engineer",
+      role: "Tech Lead, Platform Squad",
       company: "Jusfy",
       location: "Brazil",
       url: "https://jusfy.com.br/",
       period: "Oct 2025 — Present",
-      highlights: [
-        "Platform squad handling thousands of MAU and DAUs",
-        "Building and scaling lawtech solutions for legal automation",
+      highlights: [],
+      technologies: ["Node.js", "TypeScript", "NestJS", "Java", "React", "PostgreSQL", "AWS", "Ory"],
+      positions: [
+        {
+          role: "Tech Lead, Platform Squad",
+          period: "May 2026 — Present",
+          highlights: [
+            "Leading a 3-4 engineer platform squad building backend and frontend systems for a lawtech product with ~15k MAU",
+            "Driving a unified SSO login and renewing the authentication architecture on OAuth2/OIDC",
+            "Leading squad planning, code reviews, and technical interviews",
+          ],
+        },
+        {
+          role: "Senior Software Engineer",
+          period: "Oct 2025 — Apr 2026",
+          highlights: [
+            "Built a churn recovery campaign system with dynamic offers, reactivating thousands of paying users",
+            "Led migration of the invoicing provider to a queue-driven architecture, scaling to thousands of invoices per day",
+            "Contributed to system design discussions focused on reliability and scalability of event-driven workflows",
+          ],
+        },
       ],
-      technologies: ["Node.js", "TypeScript", "React", "Next.js", "PostgreSQL", "AWS"],
     },
     {
       role: "Backend Developer",
