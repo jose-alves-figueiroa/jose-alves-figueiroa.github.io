@@ -280,10 +280,16 @@ export const profile = {
     github: "https://github.com/ze-alves-figueiroa",
   },
   
-  photo: "/profile.jpg",
-  
+  photo: "/profile.png",
+
   about: "Senior software engineer with solid experience in backend development and strong fullstack capability — including cloud infrastructure and frontend interfaces. Fast learner with excellent technical skills.",
-  
+
+  scheduling: [
+    { duration: "15min", url: "https://calendar.app.google/oxNb71s1iR8wgYp19" },
+    { duration: "30min", url: "https://calendar.app.google/BJM5Bj3vkYNPeKZh9" },
+    { duration: "1h", url: "https://calendar.app.google/4sAbFdHSoA6ry9Bp8" },
+  ],
+
   experience: [
     {
       role: "Tech Lead, Platform Squad",

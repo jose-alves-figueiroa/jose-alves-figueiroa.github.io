@@ -10,6 +10,15 @@ export const translations = {
       languages: "Languages",
       interests: "Interests",
     },
+    scheduling: {
+      title: "Schedule a Call",
+      cta: "Schedule a call",
+      options: [
+        { label: "Quick chat", description: "15min" },
+        { label: "Conversation", description: "30min" },
+        { label: "Meeting", description: "1h" },
+      ],
+    },
     skillsSearch: "Hey HR, want to check if I know a specific tech? Search here.",
     skillsSearchMobile: "Search for a tech...",
     skillsSearchNoResults: "Didn't find the tech you were looking for? Check my LinkedIn, my résumé, or send me a message — I may have forgotten to list it here.",
@@ -145,6 +154,15 @@ export const translations = {
       languages: "Idiomas",
       interests: "Interesses",
     },
+    scheduling: {
+      title: "Agende uma Conversa",
+      cta: "Agendar conversa",
+      options: [
+        { label: "Conversa rápida", description: "15min" },
+        { label: "Conversa", description: "30min" },
+        { label: "Reunião", description: "1h" },
+      ],
+    },
     skillsSearch: "Ei, RH. Quer saber se eu domino alguma tecnologia? Procure aqui.",
     skillsSearchMobile: "Busque uma tecnologia...",
     skillsSearchNoResults: "Não achou a tecnologia que está procurando? Verifique meu LinkedIn, meu currículo ou me mande uma mensagem — posso ter deixado algo de fora aqui.",
@@ -279,6 +297,15 @@ export const translations = {
       skills: "Compétences",
       languages: "Langues",
       interests: "Centres d'intérêt",
+    },
+    scheduling: {
+      title: "Planifier un Appel",
+      cta: "Planifier un appel",
+      options: [
+        { label: "Échange rapide", description: "15min" },
+        { label: "Échange", description: "30min" },
+        { label: "Réunion", description: "1h" },
+      ],
     },
     skillsSearch: "Bonjour RH, vous souhaitez vérifier si je maîtrise une technologie ? Cherchez ici.",
     skillsSearchMobile: "Rechercher une technologie...",
