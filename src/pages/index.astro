@@ -21,6 +21,10 @@ function translatePeriod(period: string, months: typeof t.months, present: strin
   translated = translated.replace(/\bPresent\b/g, present);
   return translated;
 }
+
+function countryLabel(location: string): string {
+  return t.countries[location as keyof typeof t.countries] ?? location;
+}
 ---
 
 <Layout lang={lang}>
@@ -176,7 +180,7 @@ function translatePeriod(period: string, months: typeof t.months, present: strin
                     {isHighlighted && <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-orange-bright)] flex-shrink-0" aria-hidden="true"></span>}
                     <a href={job.url} target="_blank" rel="noopener" class="link">{job.company}</a>
                   </h3>
-                  <span class="text-sm text-[var(--color-text-muted)]">{translatePeriod(job.period, t.months, t.present)}</span>
+                  <span class="text-sm text-[var(--color-text-muted)]">{translatePeriod(job.period, t.months, t.present)} · {countryLabel(job.location)}</span>
                 </div>
 
                 <div class="space-y-4 mb-3">
@@ -214,7 +218,7 @@ function translatePeriod(period: string, months: typeof t.months, present: strin
                     {isHighlighted && <span class="inline-block w-1.5 h-1.5 rounded-full bg-[var(--color-orange-bright)] mr-1.5 align-middle" aria-hidden="true"></span>}
                     <span data-i18n={`experience.${expKey}.role`}>{expT.role}</span>{"type" in expT && expT.type && <span data-i18n={`experience.${expKey}.type`}> ({expT.type})</span>} · <a href={job.url} target="_blank" rel="noopener" class="link">{job.company}</a>
                   </h3>
-                  <span class="text-sm text-[var(--color-text-muted)]">{translatePeriod(job.period, t.months, t.present)}</span>
+                  <span class="text-sm text-[var(--color-text-muted)]">{translatePeriod(job.period, t.months, t.present)} · {countryLabel(job.location)}</span>
                 </div>
 
                 <ul class="space-y-1.5 text-sm text-[var(--color-text-secondary)] mb-3">
@@ -298,6 +302,7 @@ function translatePeriod(period: string, months: typeof t.months, present: strin
                 <a href={edu.url} target="_blank" rel="noopener" class="link">
                   {t.institutions[edu.institution as keyof typeof t.institutions] || edu.institution}
                 </a>
+                {"location" in edu && edu.location && <span class="text-[var(--color-text-muted)]"> · {countryLabel(edu.location)}</span>}
               </p>
               <ul class="space-y-1 text-sm text-[var(--color-text-muted)]">
                 {eduT.highlights.map((h, hIdx) => (

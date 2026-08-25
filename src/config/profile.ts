@@ -408,6 +408,7 @@ export const profile = {
       degree: "Master's in Computer Engineering",
       institution: "Polytech Côte D'Azur",
       url: "https://polytech.univ-cotedazur.fr/",
+      location: "France",
       highlights: [
         "Exchange Program",
         "Research on Simulation and Testing for Autonomous Vehicles with Inria",
@@ -418,6 +419,7 @@ export const profile = {
       institution: "Federal University of Pernambuco",
       url: "https://portal.cin.ufpe.br/",
       gpa: "8.8/10",
+      location: "Brazil",
       highlights: [
         "Teaching Assistant in Logic and Computation Theory",
         "Scientific Research in Logic",

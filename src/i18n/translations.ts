@@ -32,6 +32,10 @@ export const translations = {
       "Federal University of Pernambuco": "Federal University of Pernambuco",
       "Polytech Côte D'Azur": "Polytech Côte D'Azur",
     },
+    countries: {
+      "Brazil": "Brazil",
+      "France": "France",
+    },
     languageNames: {
       "Portuguese": "Portuguese",
       "English": "English",
@@ -176,6 +180,10 @@ export const translations = {
       "Federal University of Pernambuco": "Universidade Federal de Pernambuco",
       "Polytech Côte D'Azur": "Polytech Côte D'Azur",
     },
+    countries: {
+      "Brazil": "Brasil",
+      "France": "França",
+    },
     languageNames: {
       "Portuguese": "Português",
       "English": "Inglês",
@@ -319,6 +327,10 @@ export const translations = {
     institutions: {
       "Federal University of Pernambuco": "Université Fédérale de Pernambuco",
       "Polytech Côte D'Azur": "Polytech Côte D'Azur",
+    },
+    countries: {
+      "Brazil": "Brésil",
+      "France": "France",
     },
     languageNames: {
       "Portuguese": "Portugais",
