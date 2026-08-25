@@ -277,7 +277,7 @@ export const profile = {
   
   social: {
     linkedin: "https://www.linkedin.com/in/alves-figueiroa",
-    github: "https://github.com/ze-alves-figueiroa",
+    github: "https://github.com/jose-alves-figueiroa",
   },
   
   photo: "/profile.png",
