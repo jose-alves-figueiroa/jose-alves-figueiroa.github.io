@@ -1,6 +1,5 @@
 <svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-  
-  <text x="46%" y="57%" text-anchor="middle" dominant-baseline="middle"
+  <text x="50%" y="54%" text-anchor="middle" dominant-baseline="middle"
         font-family="JetBrains Mono, monospace" font-weight="700"
-        font-size="180" letter-spacing="14" fill="#fe8019">zé</text>
+        font-size="340" letter-spacing="-6" fill="#fe8019">zé</text>
 </svg>
