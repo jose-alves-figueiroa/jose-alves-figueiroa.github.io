@@ -272,7 +272,7 @@ export const profile = {
   
   contact: {
     email: "josericardoaf@gmail.com",
-    whatsapp: "https://wa.me/qr/ES5VM3XKQGUXE1",
+    whatsapp: "https://wa.me/5581991061110",
   },
   
   social: {
