@@ -14,6 +14,11 @@
   --color-text-muted: #525252;
   
   --color-accent: #171717;
+
+  /* Highlight palette — used sparingly for CTAs, active markers, and featured cards */
+  --color-orange: #d65d0e;
+  --color-orange-soft: #af3a03;
+  --color-orange-bright: #fe8019;
 }
 
 @layer base {

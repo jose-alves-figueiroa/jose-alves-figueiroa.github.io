@@ -298,6 +298,7 @@ export const profile = {
       url: "https://jusfy.com.br/",
       period: "Oct 2025 — Present",
       highlights: [],
+      highlight: true,
       technologies: ["Node.js", "TypeScript", "NestJS", "Java", "React", "PostgreSQL", "AWS", "Ory"],
       positions: [
         {

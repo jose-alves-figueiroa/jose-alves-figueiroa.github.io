@@ -54,13 +54,13 @@ function translatePeriod(period: string, months: typeof t.months, present: strin
           data-i18n="skillsSearch"
           data-i18n-mobile="skillsSearchMobile"
           placeholder={t.skillsSearch}
-          class="w-full pl-9 pr-2.5 sm:pr-3 py-2.5 text-xs sm:text-sm rounded-lg border-2 border-[var(--color-text-secondary)] bg-[var(--color-bg-subtle)] text-[var(--color-text)] placeholder-[var(--color-text-muted)] focus:outline-none focus:ring-2 focus:ring-[var(--color-text-secondary)] focus:border-[var(--color-text)] transition-all shadow-sm"
+          class="w-full pl-9 pr-2.5 sm:pr-3 py-2.5 text-xs sm:text-sm rounded-lg border-2 border-[var(--color-orange-bright)] bg-[var(--color-bg-subtle)] text-[var(--color-text-secondary)] placeholder-[var(--color-text-muted)] focus:outline-none focus:ring-2 focus:ring-[var(--color-orange-bright)]/40 focus:border-[var(--color-orange-bright)] transition-all shadow-sm"
         />
       </div>
       
       <nav class="flex flex-wrap gap-x-4 gap-y-2 text-xs text-[var(--color-text-secondary)]">
         <details class="scheduling-dropdown relative">
-          <summary class="link inline-flex items-center gap-1.5 cursor-pointer list-none">
+          <summary class="inline-flex items-center gap-1.5 cursor-pointer list-none font-medium text-[var(--color-orange-bright)] border-b border-transparent hover:text-[var(--color-orange-soft)] hover:border-[var(--color-orange-soft)] transition-colors">
             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
               <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
             </svg>
@@ -129,17 +129,22 @@ function translatePeriod(period: string, months: typeof t.months, present: strin
         </summary>
         <div class="mt-4">
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-            {profile.scheduling.map((slot, i) => (
-              <a
-                href={slot.url}
-                target="_blank"
-                rel="noopener"
-                class="flex flex-col gap-1 px-4 py-3 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-subtle)] hover:border-[var(--color-text-secondary)] transition-colors"
-              >
-                <span class="text-sm font-medium" data-i18n={`scheduling.options.${i}.label`}>{t.scheduling.options[i].label}</span>
-                <span class="text-xs text-[var(--color-text-muted)]" data-i18n={`scheduling.options.${i}.description`}>{t.scheduling.options[i].description}</span>
-              </a>
-            ))}
+            {profile.scheduling.map((slot, i) => {
+              const isHighlighted = i === 1;
+              return (
+                <a
+                  href={slot.url}
+                  target="_blank"
+                  rel="noopener"
+                  class={isHighlighted
+                    ? "flex flex-col gap-1 px-4 py-3 rounded-lg border-2 border-[var(--color-orange-bright)] bg-[var(--color-bg-subtle)] hover:border-[var(--color-orange-soft)] transition-colors"
+                    : "flex flex-col gap-1 px-4 py-3 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-subtle)] hover:border-[var(--color-text-secondary)] transition-colors"}
+                >
+                  <span class={isHighlighted ? "text-sm font-medium text-[var(--color-orange-bright)]" : "text-sm font-medium"} data-i18n={`scheduling.options.${i}.label`}>{t.scheduling.options[i].label}</span>
+                  <span class="text-xs text-[var(--color-text-muted)]" data-i18n={`scheduling.options.${i}.description`}>{t.scheduling.options[i].description}</span>
+                </a>
+              );
+            })}
           </div>
         </div>
       </details>
@@ -163,10 +168,12 @@ function translatePeriod(period: string, months: typeof t.months, present: strin
           if ("positions" in expT && "positions" in job && job.positions) {
             const positions = job.positions;
             const expTPositions = expT.positions;
+            const isHighlighted = "highlight" in job && job.highlight;
             return (
-              <article>
+              <article class={isHighlighted ? "relative pl-4 border-l-4 border-[var(--color-orange-bright)]" : ""}>
                 <div class="flex flex-wrap items-baseline justify-between gap-x-4 mb-3">
-                  <h3 class="font-medium">
+                  <h3 class="font-medium inline-flex items-center gap-1.5">
+                    {isHighlighted && <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-orange-bright)] flex-shrink-0" aria-hidden="true"></span>}
                     <a href={job.url} target="_blank" rel="noopener" class="link">{job.company}</a>
                   </h3>
                   <span class="text-sm text-[var(--color-text-muted)]">{translatePeriod(job.period, t.months, t.present)}</span>
@@ -199,10 +206,12 @@ function translatePeriod(period: string, months: typeof t.months, present: strin
           }
 
           if ("role" in expT) {
+            const isHighlighted = "highlight" in job && job.highlight;
             return (
-              <article>
+              <article class={isHighlighted ? "relative pl-4 border-l-4 border-[var(--color-orange-bright)]" : ""}>
                 <div class="flex flex-wrap items-baseline justify-between gap-x-4 mb-2">
                   <h3 class="font-medium">
+                    {isHighlighted && <span class="inline-block w-1.5 h-1.5 rounded-full bg-[var(--color-orange-bright)] mr-1.5 align-middle" aria-hidden="true"></span>}
                     <span data-i18n={`experience.${expKey}.role`}>{expT.role}</span>{"type" in expT && expT.type && <span data-i18n={`experience.${expKey}.type`}> ({expT.type})</span>} · <a href={job.url} target="_blank" rel="noopener" class="link">{job.company}</a>
                   </h3>
                   <span class="text-sm text-[var(--color-text-muted)]">{translatePeriod(job.period, t.months, t.present)}</span>
