@@ -1,7 +1,7 @@
 export const translations = {
   en: {
     title: "Tech Lead",
-    about: "Senior software engineer with solid experience in backend development and strong fullstack capability — including cloud infrastructure and frontend interfaces. Fast learner with excellent technical skills.",
+    about: "Senior software engineer with solid experience in backend development and strong fullstack capability, including cloud infrastructure and frontend interfaces. Fast learner with excellent technical skills.",
     sections: {
       experience: "Experience",
       projects: "Projects",
@@ -21,7 +21,7 @@ export const translations = {
     },
     skillsSearch: "Hey HR, want to check if I know a specific tech? Search here.",
     skillsSearchMobile: "Search for a tech...",
-    skillsSearchNoResults: "Didn't find the tech you were looking for? Check my LinkedIn, my résumé, or send me a message — I may have forgotten to list it here.",
+    skillsSearchNoResults: "Didn't find the tech you were looking for? Check my LinkedIn, my résumé, or send me a message. I may have forgotten to list it here.",
     cvDownload: "Resume",
     location: "Recife, Brazil",
     months: {
@@ -108,7 +108,7 @@ export const translations = {
     },
     projects: {
       cargosight: {
-        description: "B2B SaaS using computer vision to monitor industrial areas and detect operational risks in real time — missing PPE, hazardous zones, suspended load movement.",
+        description: "B2B SaaS using computer vision to monitor industrial areas and detect operational risks in real time: missing PPE, hazardous zones, suspended load movement.",
         highlights: [
           "Won 2nd place in University of Pernambuco's innovation program",
           "Validated PoC at Gerdau's steel plant, later sold to two ports",
@@ -145,7 +145,7 @@ export const translations = {
   },
   pt: {
     title: "Tech Lead",
-    about: "Engenheiro de software sênior com forte experiência em backend e atuação fullstack — incluindo infraestrutura em nuvem e desenvolvimento frontend. Aprendiz rápido, com capacidade técnica sólida e foco em resolver problemas reais.",
+    about: "Engenheiro de software sênior com forte experiência em backend e atuação fullstack, incluindo infraestrutura em nuvem e desenvolvimento frontend. Aprendiz rápido, com capacidade técnica sólida e foco em resolver problemas reais.",
     sections: {
       experience: "Experiência",
       projects: "Projetos",
@@ -165,7 +165,7 @@ export const translations = {
     },
     skillsSearch: "Ei, RH. Quer saber se eu domino alguma tecnologia? Procure aqui.",
     skillsSearchMobile: "Busque uma tecnologia...",
-    skillsSearchNoResults: "Não achou a tecnologia que está procurando? Verifique meu LinkedIn, meu currículo ou me mande uma mensagem — posso ter deixado algo de fora aqui.",
+    skillsSearchNoResults: "Não achou a tecnologia que está procurando? Verifique meu LinkedIn, meu currículo ou me mande uma mensagem. Posso ter deixado algo de fora aqui.",
     cvDownload: "Currículo",
     location: "Recife, Brasil",
     months: {
@@ -252,7 +252,7 @@ export const translations = {
     },
     projects: {
       cargosight: {
-        description: "SaaS B2B que utiliza visão computacional para monitoramento de áreas industriais e detecção de riscos operacionais em tempo real — como ausência de EPI, zonas perigosas e movimentação de carga suspensa.",
+        description: "SaaS B2B que utiliza visão computacional para monitoramento de áreas industriais e detecção de riscos operacionais em tempo real, como ausência de EPI, zonas perigosas e movimentação de carga suspensa.",
         highlights: [
           "2º lugar no programa de inovação da Universidade de Pernambuco",
           "PoC validada na usina da Gerdau e posteriormente comercializada para dois portos",
@@ -289,7 +289,7 @@ export const translations = {
   },
   fr: {
     title: "Tech Lead",
-    about: "Ingénieur logiciel senior avec une solide expérience en développement backend et une forte capacité fullstack — incluant l'infrastructure cloud et le développement frontend. Apprentissage rapide, grande maîtrise technique et forte orientation vers la résolution de problèmes concrets.",
+    about: "Ingénieur logiciel senior avec une solide expérience en développement backend et une forte capacité fullstack, incluant l'infrastructure cloud et le développement frontend. Apprentissage rapide, grande maîtrise technique et forte orientation vers la résolution de problèmes concrets.",
     sections: {
       experience: "Expérience",
       projects: "Projets",
@@ -309,7 +309,7 @@ export const translations = {
     },
     skillsSearch: "Bonjour RH, vous souhaitez vérifier si je maîtrise une technologie ? Cherchez ici.",
     skillsSearchMobile: "Rechercher une technologie...",
-    skillsSearchNoResults: "Vous n'avez pas trouvé la technologie que vous cherchiez ? Consultez mon LinkedIn, mon CV ou envoyez-moi un message — j'ai peut-être oublié de l'ajouter ici.",
+    skillsSearchNoResults: "Vous n'avez pas trouvé la technologie que vous cherchiez ? Consultez mon LinkedIn, mon CV ou envoyez-moi un message. J'ai peut-être oublié de l'ajouter ici.",
     cvDownload: "Curriculum Vitæ",
     location: "Recife, Brésil",
     months: {
@@ -396,7 +396,7 @@ export const translations = {
     },
     projects: {
       cargosight: {
-        description: "SaaS B2B utilisant la vision par ordinateur pour surveiller des zones industrielles et détecter des risques opérationnels en temps réel — absence d'EPI, zones dangereuses, déplacement de charges suspendues.",
+        description: "SaaS B2B utilisant la vision par ordinateur pour surveiller des zones industrielles et détecter des risques opérationnels en temps réel : absence d'EPI, zones dangereuses, déplacement de charges suspendues.",
         highlights: [
           "2ᵉ place au programme d'innovation de l'Université de Pernambuco",
           "PoC validée dans une usine de Gerdau, puis vendue à deux ports",

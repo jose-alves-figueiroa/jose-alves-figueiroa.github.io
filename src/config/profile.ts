@@ -282,7 +282,7 @@ export const profile = {
   
   photo: "/profile.png",
 
-  about: "Senior software engineer with solid experience in backend development and strong fullstack capability — including cloud infrastructure and frontend interfaces. Fast learner with excellent technical skills.",
+  about: "Senior software engineer with solid experience in backend development and strong fullstack capability, including cloud infrastructure and frontend interfaces. Fast learner with excellent technical skills.",
 
   scheduling: [
     { duration: "15min", url: "https://calendar.app.google/oxNb71s1iR8wgYp19" },
@@ -392,7 +392,7 @@ export const profile = {
     {
       name: "CargoSight",
       client: "Gerdau",
-      description: "B2B SaaS using computer vision to monitor industrial areas and detect operational risks in real time — missing PPE, hazardous zones, suspended load movement.",
+      description: "B2B SaaS using computer vision to monitor industrial areas and detect operational risks in real time: missing PPE, hazardous zones, suspended load movement.",
       highlights: [
         "Won 2nd place in University of Pernambuco's innovation program",
         "Validated PoC at Gerdau's steel plant, later sold to two ports",
