@@ -99,6 +99,10 @@
   .details-section:has(details[open]) {
     margin-bottom: 3.5rem;
   }
+
+  .details-section {
+    scroll-margin-top: calc(var(--header-height, 180px) + 1rem);
+  }
 }
 
 @media print {

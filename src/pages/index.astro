@@ -30,7 +30,7 @@ function countryLabel(location: string): string {
 
 <Layout lang={lang}>
   <!-- Sticky Header with Profile, Search, and Links -->
-  <header class="sticky top-0 z-50 bg-[var(--color-bg)] border-b border-[var(--color-border)] backdrop-blur-sm bg-opacity-90">
+  <header id="site-header" class="sticky top-0 z-50 bg-[var(--color-bg)] border-b border-[var(--color-border)] backdrop-blur-sm bg-opacity-90">
     <div class="max-w-2xl mx-auto px-6 py-4">
       <div class="flex flex-col sm:flex-row items-start gap-3 sm:gap-4 mb-4">
         <div class="flex items-start gap-3 sm:gap-4 flex-1 min-w-0 w-full sm:w-auto">
@@ -629,4 +629,26 @@ function countryLabel(location: string): string {
       }
     });
   }
+
+  // Keep the sticky header's height available to CSS so anchored sections
+  // (scroll-margin-top) don't end up hidden behind it when jumped to.
+  const siteHeader = document.getElementById("site-header");
+  if (siteHeader) {
+    const updateHeaderHeight = () => {
+      document.documentElement.style.setProperty("--header-height", `${siteHeader.offsetHeight}px`);
+    };
+    updateHeaderHeight();
+    window.addEventListener("resize", updateHeaderHeight);
+  }
+
+  // Give every collapsible section a "hard link": when a section is opened,
+  // reflect its id in the URL so the address bar becomes a shareable link to it.
+  document.querySelectorAll(".details-section[id] > details").forEach((details) => {
+    const sectionId = details.parentElement.id;
+    details.addEventListener("toggle", () => {
+      if (details.open) {
+        history.replaceState(null, "", `#${sectionId}`);
+      }
+    });
+  });
 </script>
